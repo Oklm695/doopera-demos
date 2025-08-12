@@ -1,0 +1,112 @@
+:root {
+  --brand-primary: #4CAF50;
+  --brand-secondary: #FFFFFF;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--brand-secondary);
+  background-color: #f9f9f9;
+}
+
+header, footer {
+  background-color: var(--brand-primary);
+  padding: 20px;
+}
+
+.navbar {
+  background-color: var(--brand-primary);
+  border-bottom: 2px solid #388E3C;
+}
+
+.navbar a {
+  color: var(--brand-secondary);
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #388E3C;
+}
+
+.btn {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: var(--brand-primary);
+}
+
+.btn:hover {
+  background-color: #388E3C;
+}
+
+a {
+  color: var(--brand-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  background-color: var(--brand-secondary);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.badge {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+
+.pagination a {
+  color: var(--brand-primary);
+  padding: 8px 16px;
+  margin: 4px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.pagination a.active {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  border: 1px solid var(--brand-primary);
+}
+
+.tabs a {
+  color: var(--brand-primary);
+  padding: 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.tabs a.active {
+  border-bottom: 2px solid var(--brand-primary);
+}
+
+.alert {
+  padding: 15px;
+  background-color: var(--brand-secondary);
+  color: #555;
+  border-left: 6px solid var(--brand-primary);
+  border-radius: 3px;
+}
