@@ -1,0 +1,160 @@
+:root {
+    --brand-primary: #00A651;
+    --brand-secondary: #FFFFFF;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: var(--brand-secondary);
+    color: #333;
+    margin: 0;
+}
+
+header {
+    background-color: var(--brand-primary);
+    color: var(--brand-secondary);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--brand-primary);
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: var(--brand-secondary);
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: var(--brand-primary);
+    color: var(--brand-secondary);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: var(--brand-primary);
+    color: var(--brand-secondary);
+}
+
+.btn:hover {
+    background-color: #028c45;
+}
+
+a {
+    color: var(--brand-primary);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    padding: 20px;
+    background-color: var(--brand-secondary);
+}
+
+.form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.badge {
+    background-color: var(--brand-secondary);
+    color: var(--brand-primary);
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination a {
+    color: var(--brand-primary);
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background-color: var(--brand-primary);
+    color: var(--brand-secondary);
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: -1px;
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-radius: 5px 5px 0 0;
+    color: var(--brand-primary);
+    margin-right: 5px;
+    padding: 10px;
+}
+
+.nav-tabs .nav-link.active {
+    border-color: #ddd #ddd var(--brand-secondary);
+    background-color: var(--brand-secondary);
+}
+
+.alert {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: rgba(0, 166, 81, 0.1);
+    color: var(--brand-primary);
+}
+
+.alert-danger {
+    background-color: rgba(255, 0, 0, 0.1);
+    color: red;
+}
+
+footer {
+    background-color: var(--brand-primary);
+    color: var(--brand-secondary);
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
