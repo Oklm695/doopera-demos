@@ -1,0 +1,163 @@
+:root {
+    --brand-primary: #59C636;
+    --brand-secondary: #FFFFFF;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: var(--brand-primary);
+    color: var(--brand-secondary);
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    background-color: var(--brand-primary);
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: var(--brand-secondary);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #45a029;
+}
+
+.btn {
+    padding: 10px 20px;
+    color: var(--brand-secondary);
+    background-color: var(--brand-primary);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #45a029;
+}
+
+.btn-primary {
+    background-color: var(--brand-primary);
+}
+
+.btn-primary:hover {
+    background-color: #45a029;
+}
+
+a {
+    color: var(--brand-primary);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.card {
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: var(--brand-secondary);
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: var(--brand-primary);
+    color: var(--brand-secondary);
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a029;
+}
+
+.badge {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: var(--brand-secondary);
+    background-color: var(--brand-primary);
+    border-radius: 12px;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination a {
+    color: var(--brand-primary);
+    padding: 10px;
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    background-color: #f3f3f3;
+}
+
+.tabs {
+    border-bottom: 2px solid #ddd;
+    overflow: hidden;
+}
+
+.tabs li {
+    float: left;
+    margin-right: 15px;
+}
+
+.tabs a {
+    color: #666;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.tabs a:hover {
+    color: var(--brand-primary);
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #999;
+}
