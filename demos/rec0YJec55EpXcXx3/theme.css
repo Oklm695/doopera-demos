@@ -1,0 +1,242 @@
+Voici un exemple de CSS pour adapter le style Freshdesk à l'image de marque de Spotify, tout en incorporant des fonctionnalités modernes et dynamiques :
+
+```css
+/* 1. Variables CSS (:root) */
+:root {
+  --primary-color: #191414;
+  --secondary-color: #1DB954;
+  --background-color: #FFFFFF;
+  --text-color: #000000;
+  --header-height: 60px;
+  --sidebar-width: 240px;
+  --transition-duration: 0.3s;
+  --font-family: 'Arial', sans-serif;
+}
+
+/* 2. Layout général */
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color var(--transition-duration), color var(--transition-duration);
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  transition: padding var(--transition-duration);
+}
+
+/* 3. Header et navigation */
+.header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color var(--transition-duration);
+}
+
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header .nav-links {
+  margin-left: auto;
+  display: flex;
+  gap: 15px;
+}
+
+.header .nav-links a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color var(--transition-duration);
+}
+
+.header .nav-links a:hover {
+  color: var(--text-color);
+}
+
+/* 4. Sidebar */
+.sidebar {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  width: var(--sidebar-width);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: background-color var(--transition-duration), color var(--transition-duration);
+}
+
+.sidebar .menu-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color var(--transition-duration), color var(--transition-duration);
+}
+
+.sidebar .menu-item:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* 5. Tickets et listes */
+.ticket-list {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ticket-list th, .ticket-list td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+  transition: background-color var(--transition-duration);
+}
+
+.ticket-list tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* 6. Formulaires */
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color var(--transition-duration);
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus,
+form select:focus {
+  border-color: var(--secondary-color);
+}
+
+/* 7. Boutons et CTA */
+.button,
+.btn {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color var(--transition-duration), transform var(--transition-duration);
+  display: inline-block;
+}
+
+.button:hover,
+.btn:hover {
+  background-color: #14843A;
+  transform: translateY(-2px);
+}
+
+.button:active,
+.btn:active {
+  transform: translateY(0);
+}
+
+/* 8. Modals */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-duration), visibility var(--transition-duration);
+}
+
+.modal-content {
+  background-color: var(--background-color);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  max-width: 100%;
+}
+
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 9. Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn var(--transition-duration) ease-in;
+}
+
+/* 10. Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+  }
+
+  .sidebar .menu-item {
+    text-align: center;
+    padding: 5px;
+  }
+
+  .header .nav-links {
+    display: none;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+}
+
+/* 11. Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #121212;
+    --text-color: #ffffff;
+  }
+
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+
+  .header, .sidebar {
+    background-color: #000000;
+  }
+
+  .button, .btn {
+    background-color: #1DB954;
+  }
+}
+```
+
+Ce CSS utilise les couleurs spécifiées pour transformer l'apparence de Freshdesk afin de correspondre à l'image de marque de Spotify. Les animations, les effets de survol et le mode dark sont intégrés pour offrir une expérience utilisateur moderne et agréable.
