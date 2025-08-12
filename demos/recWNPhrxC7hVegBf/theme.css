@@ -1,0 +1,148 @@
+:root {
+  --brand-primary: #00FF00;
+  --brand-secondary: #FFFFFF;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--brand-secondary);
+  color: #333;
+}
+
+header {
+  background-color: var(--brand-primary);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.navbar a {
+  color: var(--brand-secondary);
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn, .btn-primary {
+  background-color: var(--brand-primary);
+  border: none;
+  color: var(--brand-secondary);
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn:hover, .btn-primary:hover {
+  background-color: #00CC00;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: var(--brand-secondary);
+  margin: 20px;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--brand-secondary);
+  background-color: var(--brand-primary);
+  border-radius: 12px;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination a {
+  color: var(--brand-primary);
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabs a {
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.tabs a.active {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  border-radius: 5px 5px 0 0;
+}
+
+.alert {
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  color: #333;
+  border-left: 5px solid var(--brand-primary);
+}
+
+footer {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  text-align: center;
+  padding: 15px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
