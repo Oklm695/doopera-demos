@@ -1,0 +1,143 @@
+:root {
+  --brand-primary: #68B92E;
+  --brand-secondary: #FFFFFF;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--brand-secondary);
+  color: #333;
+}
+
+header, .navbar {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+}
+
+.header a, .navbar a {
+  color: var(--brand-secondary);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+}
+
+.header a:hover, .navbar a:hover {
+  opacity: 0.8;
+}
+
+.btn {
+  background-color: var(--brand-secondary);
+  color: var(--brand-primary);
+  border: 2px solid var(--brand-primary);
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+}
+
+.btn-primary {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  border-color: var(--brand-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--brand-secondary);
+  color: var(--brand-primary);
+}
+
+a {
+  color: var(--brand-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px;
+}
+
+.form-control {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+}
+
+.badge {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination li a {
+  color: var(--brand-primary);
+  padding: 10px 15px;
+  text-decoration: none;
+  border: 1px solid var(--brand-primary);
+  margin: 0 5px;
+  border-radius: 4px;
+}
+
+.pagination li a:hover {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 2px solid #ccc;
+}
+
+.tabs .tab {
+  margin: 0 10px;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.tabs .tab.active {
+  color: var(--brand-primary);
+  border-bottom: 2px solid var(--brand-primary);
+}
+
+.alert {
+  padding: 15px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+footer {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: var(--brand-secondary);
+  text-decoration: none;
+}
