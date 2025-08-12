@@ -1,0 +1,164 @@
+:root {
+  --brand-primary: #00A651;
+  --brand-secondary: #FFFFFF;
+}
+
+body {
+  background-color: var(--brand-secondary);
+  color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--brand-primary);
+  padding: 1rem;
+  color: var(--brand-secondary);
+  text-align: center;
+}
+
+.navbar {
+  background-color: var(--brand-primary);
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: var(--brand-secondary);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #333;
+}
+
+.btn {
+  padding: 10px 20px;
+  color: var(--brand-secondary);
+  background-color: #ddd;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn-primary {
+  background-color: var(--brand-primary);
+}
+
+.btn:hover {
+  background-color: #bbb;
+}
+
+.btn-primary:hover {
+  background-color: #008C47;
+}
+
+a {
+  color: var(--brand-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  background: var(--brand-secondary);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  font-weight: 700;
+  color: var(--brand-secondary);
+  background-color: var(--brand-primary);
+  border-radius: 0.25rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.pagination a {
+  color: var(--brand-primary);
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.tabs {
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+
+.tabs button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  cursor: pointer;
+}
+
+.tabs button:hover {
+  background-color: #ddd;
+}
+
+.tabs button.active {
+  border-bottom: 2px solid var(--brand-primary);
+}
+
+.alert {
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+  border: 1px solid #ccc;
+}
+
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #c3e6cb;
+}
+
+footer {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
