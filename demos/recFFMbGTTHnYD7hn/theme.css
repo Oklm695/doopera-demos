@@ -1,0 +1,160 @@
+:root {
+  --brand-primary: #00A94F;
+  --brand-secondary: #FFFFFF;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333333;
+  background-color: var(--brand-secondary);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: var(--brand-primary);
+}
+
+.navbar a {
+  color: var(--brand-secondary);
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #008c40;
+}
+
+.btn {
+  background-color: #cccccc;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 4px 2px;
+  color: #333333;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+}
+
+.btn-primary:hover {
+  background-color: #008c40;
+}
+
+a {
+  color: var(--brand-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  background-color: var(--brand-secondary);
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+form {
+  margin: 20px 0;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+label {
+  font-weight: bold;
+}
+
+.badge {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.pagination a {
+  color: var(--brand-primary);
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: var(--brand-primary);
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #dddddd;
+}
+
+.tabs {
+  border-bottom: 1px solid #dddddd;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tabs a {
+  padding: 10px;
+  border: none;
+  background-color: var(--brand-secondary);
+  color: #777777;
+  text-decoration: none;
+}
+
+.tabs a.active {
+  border-bottom: 2px solid var(--brand-primary);
+  font-weight: bold;
+  color: #333333;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  margin-bottom: 15px;
+}
+
+footer {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
