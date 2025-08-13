@@ -1,0 +1,134 @@
+:root {
+  --brand-primary: #FFFFFF;
+  --brand-secondary: #00A94F;
+}
+
+body {
+  background-color: var(--brand-primary);
+  color: #333333;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: var(--brand-secondary);
+  padding: 20px;
+  color: var(--brand-primary);
+}
+
+.navbar {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e3e4e6;
+}
+
+.navbar a {
+  color: var(--brand-secondary);
+  text-decoration: none;
+  padding: 15px 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--brand-secondary);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: darken(var(--brand-secondary), 10%);
+}
+
+a {
+  color: var(--brand-secondary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  border: 1px solid #e3e4e6;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: var(--brand-primary);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+input[type="text"], 
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: var(--brand-secondary);
+  color: var(--brand-primary);
+  border-radius: 8px;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination a {
+  padding: 10px 15px;
+  color: var(--brand-secondary);
+  background-color: var(--brand-primary);
+  border: 1px solid #e3e4e6;
+  border-radius: 4px;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.tabs a {
+  padding: 10px 20px;
+  color: var(--brand-secondary);
+  text-decoration: none;
+}
+
+.tabs a.active {
+  border-bottom: 2px solid var(--brand-secondary);
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+  border-radius: 4px;
+}
+
+footer {
+  background-color: #333333;
+  color: var(--brand-primary);
+  text-align: center;
+  padding: 20px 0;
+}
