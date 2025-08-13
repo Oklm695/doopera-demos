@@ -1,0 +1,144 @@
+:root {
+  --brand-primary: #65B32E;
+  --brand-secondary: #FFFFFF;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: var(--brand-secondary);
+  background-color: #f4f4f9;
+}
+
+header {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  padding: 15px;
+}
+
+.navbar {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+}
+
+.navbar a {
+  color: var(--brand-secondary);
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  padding: 20px;
+  text-align: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+a {
+  color: var(--brand-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  background-color: var(--brand-secondary);
+  border-radius: 7px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  background-color: var(--brand-secondary);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.badge {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.pagination a {
+  color: var(--brand-primary);
+  padding: 8px 12px;
+  margin: 0 4px;
+  border-radius: 4px;
+  border: 1px solid var(--brand-primary);
+  text-decoration: none;
+}
+
+.pagination a:hover {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.tabs a {
+  padding: 10px 20px;
+  color: var(--brand-primary);
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.tabs a:hover,
+.tabs a.active {
+  border-bottom: 3px solid var(--brand-primary);
+}
+
+.alert {
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #f4f4f9;
+  border-left: 5px solid var(--brand-primary);
+}
+
+.alert-success {
+  background-color: #e5f8e0;
+  border-left: 5px solid #5cb85c;
+}
