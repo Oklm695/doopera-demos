@@ -1,0 +1,139 @@
+:root {
+  --brand-primary: #00A94F;
+  --brand-secondary: #FFFFFF;
+}
+
+body, html {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--brand-secondary);
+  color: #333;
+}
+
+header {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  padding: 15px 20px;
+}
+
+nav {
+  background-color: var(--brand-secondary);
+  padding: 10px 20px;
+}
+
+nav a {
+  color: var(--brand-primary);
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.btn-primary {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+}
+
+.btn-primary:hover {
+  background-color: #008c3e;
+}
+
+a {
+  color: var(--brand-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: var(--brand-secondary);
+}
+
+form {
+  margin: 20px 0;
+}
+
+input, select, textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.badge {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+.pagination {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination a {
+  color: var(--brand-primary);
+  text-decoration: none;
+}
+
+.pagination a:hover {
+  text-decoration: underline;
+}
+
+.tabs {
+  margin-bottom: 15px;
+}
+
+.tabs a {
+  padding: 10px 20px;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+  color: var(--brand-primary);
+}
+
+.tabs a:hover, .tabs a.active {
+  border-bottom-color: var(--brand-primary);
+}
+
+.alert {
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  color: #333;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+footer {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  padding: 15px 20px;
+  text-align: center;
+}
