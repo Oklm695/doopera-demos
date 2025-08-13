@@ -1,0 +1,130 @@
+:root {
+    --brand-primary: #00B140;
+    --brand-secondary: #000000;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--brand-secondary);
+}
+
+header {
+    background-color: var(--brand-primary);
+    padding: 10px 0;
+}
+
+.navbar {
+    background-color: var(--brand-primary);
+    padding: 10px;
+}
+
+.navbar a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--brand-primary);
+    color: #FFFFFF;
+}
+
+.btn:hover {
+    background-color: #008F36;
+}
+
+a {
+    color: var(--brand-primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #008F36;
+}
+
+.card {
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin: 20px 0;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+}
+
+.badge {
+    background-color: var(--brand-primary);
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.pagination {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.pagination li {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pagination li a {
+    color: var(--brand-primary);
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #E0E0E0;
+}
+
+.tabs a {
+    padding: 10px;
+    color: var(--brand-secondary);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    margin-right: 10px;
+}
+
+.tabs a.active {
+    border-bottom-color: var(--brand-primary);
+    font-weight: bold;
+}
+
+.alert {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.alert-primary {
+    background-color: var(--brand-primary);
+    color: #FFFFFF;
+}
+
+footer {
+    background-color: #F8F8F8;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #E0E0E0;
+}
