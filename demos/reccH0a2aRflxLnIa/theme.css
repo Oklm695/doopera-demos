@@ -1,0 +1,131 @@
+:root {
+  --brand-primary: #00FF00;
+  --brand-secondary: #000000;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: var(--brand-secondary);
+  background-color: #ffffff;
+}
+
+header,
+footer {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar {
+  background-color: var(--brand-primary);
+  border-bottom: 1px solid var(--brand-secondary);
+}
+
+.navbar a {
+  color: var(--brand-secondary);
+  padding: 10px 15px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: var(--brand-secondary);
+  color: var(--brand-primary);
+}
+
+.btn {
+  border: 1px solid var(--brand-secondary);
+  background-color: #ffffff;
+  color: var(--brand-secondary);
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+}
+
+.btn:hover {
+  background-color: var(--brand-secondary);
+  color: var(--brand-primary);
+}
+
+a {
+  color: var(--brand-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--brand-secondary);
+}
+
+.card {
+  border: 1px solid var(--brand-secondary);
+  border-radius: 4px;
+  padding: 20px;
+  margin: 10px 0;
+  background-color: #ffffff;
+}
+
+.form-control {
+  border: 1px solid var(--brand-secondary);
+  padding: 10px;
+  width: 100%;
+}
+
+.badge {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination a {
+  color: var(--brand-primary);
+  text-decoration: none;
+}
+
+.pagination a:hover {
+  color: var(--brand-secondary);
+}
+
+.tabs {
+  border-bottom: 1px solid var(--brand-secondary);
+  display: flex;
+}
+
+.tab-item {
+  margin: 0 10px;
+  padding: 10px;
+  color: var(--brand-primary);
+  cursor: pointer;
+}
+
+.tab-item:hover {
+  color: var(--brand-secondary);
+  border-bottom: 2px solid var(--brand-primary);
+}
+
+.alert {
+  border: 1px solid var(--brand-secondary);
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #ffffff;
+  color: var(--brand-secondary);
+}
+
+footer {
+  border-top: 1px solid var(--brand-secondary);
+}
