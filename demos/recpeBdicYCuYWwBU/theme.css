@@ -1,0 +1,136 @@
+:root {
+  --brand-primary: #00A550;
+  --brand-secondary: #FFFFFF;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333333;
+}
+
+.header,
+.navbar {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  padding: 15px;
+}
+
+.header a,
+.navbar a {
+  color: var(--brand-secondary);
+  text-decoration: none;
+  padding: 10px;
+}
+
+.btn {
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background-color: var(--brand-primary);
+  border: 1px solid var(--brand-primary);
+  color: var(--brand-secondary);
+}
+
+.btn-primary:hover {
+  background-color: var(--brand-secondary);
+  color: var(--brand-primary);
+}
+
+a {
+  color: var(--brand-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  padding: 20px;
+  background-color: var(--brand-secondary);
+  color: #333333;
+}
+
+.form-control {
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+}
+
+.badge {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.pagination {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination a {
+  color: var(--brand-primary);
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.pagination a:hover {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+}
+
+.tabs {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  border-bottom: 2px solid #E0E0E0;
+}
+
+.tabs li {
+  margin: 0;
+}
+
+.tabs a {
+  padding: 10px 20px;
+  color: var(--brand-primary);
+  text-decoration: none;
+}
+
+.tabs a.active {
+  border-bottom: 2px solid var(--brand-primary);
+  font-weight: bold;
+}
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  background-color: #F8F8F8;
+  color: #333333;
+}
+
+.alert-success {
+  border-left: 5px solid var(--brand-primary);
+}
+
+.footer {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
