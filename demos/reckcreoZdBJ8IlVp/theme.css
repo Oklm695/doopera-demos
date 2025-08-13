@@ -1,0 +1,138 @@
+:root {
+  --brand-primary: #00A94F;
+  --brand-secondary: #FFFFFF;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+header {
+  background-color: var(--brand-primary);
+  padding: 20px;
+  color: var(--brand-secondary);
+}
+
+.navbar {
+  background-color: var(--brand-primary);
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.navbar a {
+  color: var(--brand-secondary);
+  padding: 15px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #007a3e;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+}
+
+.btn-primary:hover {
+  background-color: #007a3e;
+}
+
+a {
+  color: var(--brand-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.form-control {
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.badge {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.pagination {
+  display: flex;
+  list-style-type: none;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination a {
+  color: var(--brand-primary);
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.pagination a:hover {
+  background-color: #007a3e;
+  color: var(--brand-secondary);
+}
+
+.tabs {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.tab {
+  padding: 10px 15px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+
+.tab-active {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  border-color: #e0e0e0 #e0e0e0 transparent;
+}
+
+.alert {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  color: #333;
+}
+
+.alert-primary {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+}
+
+.footer {
+  background-color: var(--brand-primary);
+  padding: 20px;
+  color: var(--brand-secondary);
+  text-align: center;
+}
