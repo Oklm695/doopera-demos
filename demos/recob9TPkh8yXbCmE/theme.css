@@ -1,0 +1,160 @@
+:root {
+  --brand-primary: #4CAF50;
+  --brand-secondary: #FFFFFF;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: var(--brand-secondary);
+}
+
+header {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  padding: 20px;
+}
+
+.navbar {
+  background-color: var(--brand-primary);
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: var(--brand-secondary);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #3e8e41;
+  color: var(--brand-secondary);
+}
+
+.btn {
+  background-color: var(--brand-secondary);
+  color: var(--brand-primary);
+  border: 1px solid var(--brand-primary);
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+}
+
+.btn-primary {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #3e8e41;
+}
+
+a {
+  color: var(--brand-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3e8e41;
+}
+
+.card {
+  background-color: var(--brand-secondary);
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.card-header {
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-control:focus {
+  border-color: var(--brand-primary);
+  outline: none;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--brand-secondary);
+  background-color: var(--brand-primary);
+  border-radius: 4px;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 5px;
+}
+
+.pagination a {
+  color: var(--brand-primary);
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a:hover {
+  background-color: #3e8e41;
+  color: var(--brand-secondary);
+}
+
+.tabs {
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab {
+  float: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: var(--brand-primary);
+}
+
+.tab:hover {
+  background-color: #3e8e41;
+  color: var(--brand-secondary);
+}
+
+.alert {
+  padding: 20px;
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.footer {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
