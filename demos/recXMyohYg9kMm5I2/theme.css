@@ -1,0 +1,130 @@
+:root {
+  --brand-primary: #FFFFFF;
+  --brand-secondary: #54B948;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--brand-secondary);
+  background-color: var(--brand-primary);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--brand-secondary);
+  padding: 10px 20px;
+  text-align: center;
+  color: var(--brand-primary);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--brand-secondary);
+  padding: 10px;
+}
+
+.navbar a {
+  color: var(--brand-primary);
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.btn {
+  background-color: var(--brand-secondary);
+  color: var(--brand-primary);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--brand-primary);
+  color: var(--brand-secondary);
+  border: 1px solid var(--brand-secondary);
+}
+
+.btn:hover, .btn-primary:hover {
+  opacity: 0.8;
+}
+
+.cards {
+  background-color: var(--brand-primary);
+  border: 1px solid var(--brand-secondary);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+form {
+  margin: 20px;
+  background-color: var(--brand-primary);
+  padding: 20px;
+  border: 1px solid var(--brand-secondary);
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--brand-secondary);
+}
+
+.badge {
+  background-color: var(--brand-secondary);
+  color: var(--brand-primary);
+  padding: 5px 10px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.pagination a {
+  color: var(--brand-secondary);
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid var(--brand-secondary);
+  margin: 0 5px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid var(--brand-secondary);
+}
+
+.tabs a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--brand-secondary);
+  border-bottom: 2px solid transparent;
+}
+
+.tabs a.active {
+  border-bottom-color: var(--brand-secondary);
+}
+
+.alert {
+  background-color: var(--brand-secondary);
+  color: var(--brand-primary);
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 3px;
+}
+
+footer {
+  background-color: var(--brand-secondary);
+  color: var(--brand-primary);
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
